@@ -38,14 +38,30 @@ export default function Nav() {
               className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
             >
               <li>
-                <a href="/">الرئيسية</a>
+              <Link to="/" > <a >الرئيسية</a></Link>
               </li>
               <li>
-                <a>من نحن</a>{' '}
+               <Link to="/About" ><a>من نحن</a></Link>
               </li>
               <li>
-                <a>الدعم</a>
+              <Link to="/sendemail" >  <a>الدعم</a></Link>
               </li>
+              {currentUser || user ? (
+              <Link to={"/MyReservations"}>
+                <li>
+                  <a>حجوزاتي</a>
+                </li>
+              </Link> 
+            ) : null}
+
+            {currentUser || user ? (
+              <Link to={"/Data"}>
+                <li>
+                  <a>حسابي</a>
+                </li>
+              </Link> 
+            ) : null}
+            
             </ul>
           </div>
           <a href='/' className="btn btn-ghost text-xl">
