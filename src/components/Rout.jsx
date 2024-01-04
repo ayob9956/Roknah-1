@@ -16,8 +16,8 @@ import CheckoutForm from './CheckoutForm'
  import About from './About'
  import Emailjs from './Emailjs'
  import MyReservation from './MyReservation'
-
-
+import Pay from './Pay'
+import AddCard from './AddCard'
 
 export default function Rout() {
 
@@ -32,7 +32,7 @@ export default function Rout() {
         <Route path='/Signin' element={<Signin/>}/>
         <Route path='/support' element={<Emailjs/>}/>
         <Route path='/ticket' element={<Ticket/>}/>
-        <Route path='/checkout' element={<Checkout/>}/>
+        <Route path='/checkout' element={<Pay/>}/>
         <Route path='/CheckoutForm' element={<CheckoutForm/>}/>
         <Route path='/sendemail' element={<Emailjs/>}/>
         <Route path='/bookinfo' element={<BookInfo/>} />
@@ -40,10 +40,9 @@ export default function Rout() {
         <Route path='/Data' element={<Data/>}/>
         <Route path='/UserData' element={<UserData/>}/>
         <Route path='/MyReservations' element={<MyReservation/>}/>
-
+        <Route path='/addcard' element={<AddCard/>}/>
     
     </Routes> 
-
     {/* <UserData></UserData> */}
     {/* {<Emailjs/>} */}
     {/* <Signin/> */}

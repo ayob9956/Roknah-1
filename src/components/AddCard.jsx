@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom/dist'
 
 function AddCard() {
   return (
-    <div className='flex justify-center'>
+    <div className='flex justify-center mt-10'>
   <div class="bg-white overflow-hidden shadow rounded-lg border">
     <div class="px-4 py-5  flex ">
  
